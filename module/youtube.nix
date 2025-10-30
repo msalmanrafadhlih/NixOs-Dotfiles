@@ -1,5 +1,11 @@
 { home, ... }:
 
+let
+    create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
+    home = config.home.homeDirectory;
+    USER = config.home.username;
+    dots = "/home/tquilla/.repos/nixos";
+in
 {
 	home.file.".local/share/applications/youtube.desktop" = {
 		text = ''
@@ -9,10 +15,10 @@ Version=1.0
 Name=Youtube
 GenericName=Youtube Watch Video
 Comment=Youtube Watch Video
-Exec=/home/tquilla/.config/polybar/script/youtube.sh
+Exec=${home}.config/polybar/script/youtube.sh
 StartupNotify=true
 Terminal=false
-Icon=~/Pictures/iconApps/Youtube.png
+Icon=${home}/Pictures/iconApps/Youtube.png
 Type=Application
 Categories=Network;WebBrowser;
 MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/webcal;x-scheme-handler/mailto;x-scheme-handler/about;x-scheme-handler/unknown
