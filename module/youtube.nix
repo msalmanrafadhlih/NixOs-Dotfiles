@@ -1,7 +1,7 @@
 { home, ... }:
 
 {
-	home.file.".local/share/youtube.desktop" = {
+	home.file.".local/share/applications/youtube.desktop" = {
 		text = ''
 [Desktop Entry]
 StartupWMClass=chromium-browser
@@ -20,5 +20,5 @@ Actions=new-window;new-private-window;
 Path=
 		'';
 		executable = true;
-	}
+	};
 }
