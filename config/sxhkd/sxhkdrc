@@ -50,7 +50,7 @@ super + h
 	kdocker -f -q kitty --class=Terminalnvim -e hx
 # ---------------------------------------------------------  Rmpc	
 super + m
-    st -c floating_rmpc -e rmpc
+    kdocker -f -q st -c floating_rmpc -e rmpc
 # ---------------------------------------------------------  Rmpc	
 super + v
     picard
@@ -63,7 +63,7 @@ super + s
 # ---------------------------------------------------------  Exit
 super + q
 	bspc node -c
-# ---------------------------------------------------------  Exit
+# ---------------------------------------------------------  Kitty
 super + y
 	kitty --class=YaziTerm -e yazi
 ###########################################################

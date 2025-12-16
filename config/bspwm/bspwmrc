@@ -49,6 +49,8 @@ bspc config external_rules_command "${HOME}"/.config/bspwm/src/ExternalRules
 
 bspc rule -a floating_rmpc state=floating rectangle=750x350+3+30
 bspc rule -a ChatAi state=floating rectangle=470x665+1445+385
+bspc rule -a GeminiAi state=floating rectangle=470x665+1445+385
+bspc rule -a ClaudeAi state=floating rectangle=470x665+1445+385
 bspc rule -a TerminalDefault state=floating sticky=off rectangle=750x665+3+385
 bspc rule -a TerminalPinned state=floating sticky=on rectangle=470x350+1445+30
 bspc rule -a Terminalnvim desktop=^3 state=floating sticky=off rectangle=1435x1020+3+30
