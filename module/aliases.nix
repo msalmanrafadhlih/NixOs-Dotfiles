@@ -112,6 +112,7 @@ GC = "sudo nix-store --gc";
 CLEANER = "rm -rf ~/.cache/nix && rm -rf /tmp/nix-build-* && rm -rf ~/.local/share/Trash/*";
 CLEAR = "clear";
 clar = "clear";
+CLS = "clear";
 C = "clear";
 c = "clear";
 

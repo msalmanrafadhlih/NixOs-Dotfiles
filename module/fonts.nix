@@ -50,8 +50,7 @@
         unifont
         noto-fonts
         noto-fonts-cjk-sans
-        noto-fonts-emoji
-        noto-fonts-extra
+        noto-fonts-color-emoji
 
         # Monospace (coding / terminal)
         nerd-fonts.jetbrains-mono
