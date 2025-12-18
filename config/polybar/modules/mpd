@@ -5,7 +5,6 @@ label-song =󰎈 %artist% - %title%
 label-song-ellipsis = true
 label-song-scroll = true
 
-
 host = 127.0.0.1
 port = 6600
 

@@ -16,7 +16,7 @@ if [ -z "$TMUX" ]; then
     fi
 fi
 
-eval "$(tv init zsh)"
+#eval "$(tv init zsh)"
 
 autoload -Uz compinit
 local zcompdump="$HOME/.config/zsh/zcompdump-$ZSH_VERSION"
@@ -130,7 +130,7 @@ fi
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
 #  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │
 #  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴
-$HOME/.local/bin/colorscript -r
+# $HOME/.local/bin/colorscript -r
 #disable-fzf-tab
   	'';
   	executable = true;

@@ -13,7 +13,7 @@
       nixpkgs-fmt
 #      daktilo
 	  vscode
-      nodejs
+      nodejs_24
       feh
       gcc
 

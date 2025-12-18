@@ -6,7 +6,7 @@ ping-interval = 10
 
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%
-label-disconnected = 󰖪  not connected
+label-disconnected = 󰖪  not connected - nmtui
 label-disconnected-foreground = #66
 
 ramp-signal-0 = 󰤯
@@ -20,6 +20,8 @@ animation-packetloss-0-foreground = #ffa64c
 animation-packetloss-1 = 󱔺
 animation-packetloss-1-foreground = ${bar/top.foreground}
 animation-packetloss-framerate = 500
+
+click-left = "st -c TerminalPinned -e nmtui"
 
 [module/wired-network]
 type = internal/network
