@@ -2,10 +2,10 @@
 
 {
     users.users = {
-        whiskey = {
-          isNormalUser = true;
-          extraGroups = [ "wheel" "audio" "video" "networkmanager" ];
-        };
+        # whiskey = {
+        #   isNormalUser = true;
+        #   extraGroups = [ "wheel" "audio" "video" "networkmanager" ];
+        # };
 
         tquilla = {
           isNormalUser = true;

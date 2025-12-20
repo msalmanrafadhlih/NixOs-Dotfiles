@@ -13,14 +13,14 @@ TV = "nix run nixpkgs#television";
 
 ##  SYSTEM CONFIGURATIONS
 HOSTS = "cd ~/.repos/nixos/host && tree ~/.repos/nixos/host";
-NIX = "nano ~/.repos/nixos/system/configuration.nix";
+NIX = "hx ~/.repos/nixos/system/configuration.nix";
 HNIX = "bat ~/.repos/nixos/system/hardware-configuration.nix";
-FLAKE = "nano ~/.repos/nixos/flake.nix";
+FLAKE = "hx ~/.repos/nixos/flake.nix";
 LOCK = "bat ~/.repos/nixos/flake.lock";
 
-FONTS = "nano ~/.repos/nixos/module/fonts.nix";
-SYSINSTALL = "nano  ~/.repos/nixos/module/system-packages.nix";
-SERVICE = "nano  ~/.repos/nixos/module/services.nix";
+FONTS = "hx ~/.repos/nixos/module/fonts.nix";
+SYSINSTALL = "hx  ~/.repos/nixos/module/system-packages.nix";
+SERVICE = "hx  ~/.repos/nixos/module/services.nix";
 BOOT = "~/.repos/nixos/module/boot.nix";
 
 
@@ -32,35 +32,35 @@ GRAPH = "git log --oneline --decorate --graph --all";
 
 ##  USER CONFIGURATIONS {EDIT}
 MDL = "cd ~/.repos/nixos/module && ls -a";
-HOME = "cd ~/.repos/nixos/user && nano ~/.repos/nixos/user/$USER.nix ";
-ALIAS = "nano ~/.repos/nixos/module/aliases.nix";
-BASH = "nano ~/.repos/nixos/module/bash.nix";
-ZSH = " nano ~/.repos/nixos/module/zshrc.nix";
-INSTALL = "nano ~/.repos/nixos/module/packages.nix";
-BAT = "nano ~/.repos/nixos/module/bat.nix";
-XSESSION = "nano ~/.repos/nixos/module/xsession.nix";
-PAD = "nano ~/.repos/nixos/module/toggle_touchpad.nix";
-VOL = "nano ~/.repos/nixos/module/volume.nix";
-BRIGHT = "nano ~/.repos/nixos/module/brightness.nix";
-BAT0 = "nano ~/.repos/nixos/module/battery.nix";
-NANO = "nano ~/.repos/nixos/module/nanorc.nix";
-MPD = "nano ~/.repos/nixos/module/mpd.nix";
-BRANCH = "nano ~/.repos/nixos/module/git-prompt.nix";
-TAR = "nano ~/.repos/nixos/module/tar.nix";
-BG = "nano ~/.repos/nixos/module/background.nix";
-OPENCAM = "nano ~/.repos/nixos/module/opencam.nix";
-BOOKMARK = "nano ~/.repos/nixos/module/bookmarks.nix";
-REPOS = "nano ~/.repos/nixos/module/github-repos.nix";
-TMUXSESSION = "nano ~/.repos/nixos/module/tmux-sessions.nix";
-LOCAL = "nano ~/.repos/nixos/module/locals.nix";
-SSH = "nano ~/.repos/nixos/module/ssh.nix";
+HOME = "cd ~/.repos/nixos/user && hx ~/.repos/nixos/user/$USER.nix ";
+ALIAS = "hx ~/.repos/nixos/module/aliases.nix";
+BASH = "hx ~/.repos/nixos/module/bash.nix";
+ZSH = " hx ~/.repos/nixos/module/zshrc.nix";
+INSTALL = "hx ~/.repos/nixos/module/packages.nix";
+BAT = "hx ~/.repos/nixos/module/bat.nix";
+XSESSION = "hx ~/.repos/nixos/module/xsession.nix";
+PAD = "hx ~/.repos/nixos/module/toggle_touchpad.nix";
+VOL = "hx ~/.repos/nixos/module/volume.nix";
+BRIGHT = "hx ~/.repos/nixos/module/brightness.nix";
+BAT0 = "hx ~/.repos/nixos/module/battery.nix";
+hx = "hx ~/.repos/nixos/module/nanorc.nix";
+MPD = "hx ~/.repos/nixos/module/mpd.nix";
+BRANCH = "hx ~/.repos/nixos/module/git-prompt.nix";
+TAR = "hx ~/.repos/nixos/module/tar.nix";
+BG = "hx ~/.repos/nixos/module/background.nix";
+OPENCAM = "hx ~/.repos/nixos/module/opencam.nix";
+BOOKMARK = "hx ~/.repos/nixos/module/bookmarks.nix";
+REPOS = "hx ~/.repos/nixos/module/github-repos.nix";
+TMUXSESSION = "hx ~/.repos/nixos/module/tmux-sessions.nix";
+LOCAL = "hx ~/.repos/nixos/module/locals.nix";
+SSH = "hx ~/.repos/nixos/module/ssh.nix";
 
 ##  USER CONFIGURATIONS {SAVE}
 UTILS = "chmod +x ~/.local/bin/*.sh";
 
 ## LINK BOOKMARKS
-PERSONAL = "nano ~/.config/bookmarks/personal.txt";
-WORK = "nano ~/.config/bookmarks/work.txt";
+PERSONAL = "hx ~/.config/bookmarks/personal.txt";
+WORK = "hx ~/.config/bookmarks/work.txt";
 
 
 ##  DOTSFILE CONNFIGURATION & BSPWM
@@ -68,30 +68,30 @@ CONFIG = "ls ~/.repos/nixos/config && cd ~/.repos/nixos/config";
 POLYMODULE = "tree ~/.repos/nixos/config/polybar/modules && cd ~/.repos/nixos/config/polybar/modules";
 POLYSCRIPT =  "cd ~/.repos/nixos/config/polybar/script && tree";
 
-TMUX = "nano ~/.repos/nixos/config/tmux/tmux.conf";
-ER = "nano ~/.repos/nixos/config/bspwm/src/ExternalRules";
-BSPWM = "nano ~/.repos/nixos/config/bspwm/bspwmrc";
-SXHKD = "nano ~/.repos/nixos/config/sxhkd/sxhkdrc";
-POLY = "nano ~/.repos/nixos/config/polybar/config.ini";
-ALAC = "nano ~/.repos/nixos/config/alacritty/alacritty.toml";
-DUNST = "nano ~/.repos/nixos/config/dunst/dunstrc";
-CURSOR = "nano ~/.icons/default/index.theme";
-PCOM = "nano ~/.repos/nixos/config/picom/picom.conf";
-ANIMA = "nano ~/.repos/nixos/config/picom/picom-animations.conf";
-POWERMENU = "nano ~/.repos/nixos/config/rofi/files/powermenu/type-4/style-1.rasi";
-ROFI = "nano ~/.repos/nixos/config/rofi/files/launchers/type-7/style-4.rasi";
+TMUX = "hx ~/.repos/nixos/config/tmux/tmux.conf";
+ER = "hx ~/.repos/nixos/config/bspwm/src/ExternalRules";
+BSPWM = "hx ~/.repos/nixos/config/bspwm/bspwmrc";
+SXHKD = "hx ~/.repos/nixos/config/sxhkd/sxhkdrc";
+POLY = "hx ~/.repos/nixos/config/polybar/config.ini";
+ALAC = "hx ~/.repos/nixos/config/alacritty/alacritty.toml";
+DUNST = "hx ~/.repos/nixos/config/dunst/dunstrc";
+CURSOR = "hx ~/.icons/default/index.theme";
+PCOM = "hx ~/.repos/nixos/config/picom/picom.conf";
+ANIMA = "hx ~/.repos/nixos/config/picom/picom-animations.conf";
+POWERMENU = "hx ~/.repos/nixos/config/rofi/files/powermenu/type-4/style-1.rasi";
+ROFI = "hx ~/.repos/nixos/config/rofi/files/launchers/type-7/style-4.rasi";
 
 ## Suckless Stuff
 SUCKPULL = "mv config.h config.h.bak && git pull";
 NSHELL = "cd shell && nix-shell && cd ..";
 PATCH = "patch -p1 <";
-STCONF = "cd ~/.repos/nixos/config/st  && nano config.h";
-DMENUCONF = "cd ~/.repos/nixos/config/dmenu && nano config.h";
-SLOCKCONF = "cd ~/.repos/nixos/config/slock && nano config.h";
+STCONF = "cd ~/.repos/nixos/config/st  && hx config.h";
+DMENUCONF = "cd ~/.repos/nixos/config/dmenu && hx config.h";
+SLOCKCONF = "cd ~/.repos/nixos/config/slock && hx config.h";
 CONFSAVE = "mv config.h config.h.bak";
 CONFDEL = "cp config.h.bak config.h";
 MAKE = "make clean && make && make install PREFIX=$HOME/.local";
-SUCKLESS = "nano ~/.repos/nixos/module/suckless.nix";
+SUCKLESS = "hx ~/.repos/nixos/module/suckless.nix";
 
 ## Tmux
 TMUXSAVE = "tmux source-file ~/.config/tmux/tmux.conf";
@@ -109,10 +109,11 @@ GBGOLD = "sudo nix-env -p /nix/var/nix/profiles/system --delete-generations +3";
 GBG = "sudo nix-collect-garbage";
 OPTIMISE = "sudo nix-store --optimise";
 GC = "sudo nix-store --gc";
-CLEANER = "rm -rf ~/.cache/nix && rm -rf /tmp/nix-build-* && rm -rf ~/.local/share/Trash/*";
+CLEANER = "rm -rf ~/.cache/nix && rm -rf /tmp/nix-build-* && rm -rf ~/.local/share/Trash";
 CLEAR = "clear";
 clar = "clear";
 CLS = "clear";
+cls = "clear";
 C = "clear";
 c = "clear";
 
