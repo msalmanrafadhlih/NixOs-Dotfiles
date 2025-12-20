@@ -21,7 +21,7 @@ LOCK = "bat ~/.repos/nixos/flake.lock";
 FONTS = "nano ~/.repos/nixos/module/fonts.nix";
 SYSINSTALL = "nano  ~/.repos/nixos/module/system-packages.nix";
 SERVICE = "nano  ~/.repos/nixos/module/services.nix";
-SPLASH = "~/.repos/nixos/module/splash.nix";
+BOOT = "~/.repos/nixos/module/boot.nix";
 
 
 ## GIT INTEGRATION
