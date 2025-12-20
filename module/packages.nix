@@ -12,7 +12,7 @@
 
       nixpkgs-fmt
 #      daktilo
-	  vscode
+	    vscode
       nodejs_24
       feh
       gcc
@@ -20,12 +20,13 @@
       font-manager
       picard      
       jellyfin-ffmpeg
-	  ungoogled-chromium
-	  libreoffice	  
-	  zoom
-	  evince
-	  obs-studio
-	  flameshot
+	    ungoogled-chromium
+  	  libreoffice	  
+	    zoom
+	    evince
+	    obs-studio
+	    flameshot
+	    glow # preview readme.md
     ])
     ++ (with pkgs.unstable; [
       # unstable packages
