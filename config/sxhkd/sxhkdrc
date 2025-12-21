@@ -19,7 +19,7 @@ super + Escape
 
 ###########################################################
 # ------------------ Applications ----------------------- #
-###########################################################
+##########,#################################################
 # ==============================================  MAIN APPS
 # ---------------------------------------------------------  Terminal
 super + Return
@@ -43,25 +43,25 @@ super + e
 super + f
 	thunar
 # ------o--------------------------------------------------  Geany 
-super + g
+super + g,
 	geany
 # ---------------------------------------------------------  Helix
-super + h
-	kdocker -f -q kitty --class=Terminalnvim -e hx .repos/
+super + h,
+	kdocker -f -q st -c Terminalnvim -e hx .repos/
 # ---------------------------------------------------------  Rmpc	
 super + m
     kdocker -f -q st -c floating_rmpc -e rmpc
-# ---------------------------------------------------------  Rmpc	
-super + v
+# ---------------------------------------------------------  Picart
+super + v,
     picard
 # ---------------------------------------------------------  Terminal
 super + p
 	st -c TerminalPinned
-h# ---------------------------------------------------------  Terminal
+h# --------------------------------------------------------- Spotify
 super + s
 	kdocker -q -f spotify --disable-accelerated-video-decode --no-zygote
 # ---------------------------------------------------------  Exit
-super + q
+super + q,
 	bspc node -c
 # ---------------------------------------------------------  Kitty
 super + y
@@ -89,16 +89,16 @@ alt + {h,u}
 super + shift + {1-9,0}
 	bspc node -d '^{1-9,10}'
 # ---------------------------------------------------------  Move focused NOde to spesific worksapce by arrow
-super + shift + {Left,Right}
+supkitty --class=+ {Left,Right}
 	bspc node -d {prev,next} '--follow'
 # ---------------------------------------------------------  Swap Focused Node
-super + alt + {Left,Down,Up,Right}
+supkitty --class=+ {Left,Down,Up,Right}
 	{ DIR=west FALLBACK=prev; , DIR=south; , DIR=north; , DIR=east FALLBACK=next; } \
 	bspc node -f $DIR.!sticky.!hidden.local || bspc node -f $FALLBACK.leaf.!sticky.!hidden.local
 # ---------------------------------------------------------  Swap Node
 super + ctrl + {Left,Down,Up,Right}
 	bspc node -s {west,south,north,east}.local
-# ---------------------------------------------------------  Bring all Nodes to spesific workspace
+# -kitty --class=Nodes to spesific workspace
 #super + shift + a ; {1-9}
 #    	bspc query -N -d {1-9} -n '.window' | xargs -I id -n 1 bspc node id -d focused
 # ---------------------------------------------------------  Bring all Marked Node to focused workspace
@@ -107,7 +107,7 @@ super + ctrl + {Left,Down,Up,Right}
 # ---------------------------------------------------------  Increase / Deacrese Nodes
 super + shift + {plus,minus}
 	{ \
-       bspc node -z top_right 20 -20 ; bspc node -z bottom_left -20 20; \
+   kitty --class= top_right 20 -20 ; bspc node -z bottom_left -20 20; \
     ,  bspc node -z top_right -20 20 ; bspc node -z bottom_left 20 -20; \
     }
 

@@ -85,9 +85,9 @@ ROFI = "hx ~/.repos/nixos/config/rofi/files/launchers/type-7/style-4.rasi";
 SUCKPULL = "mv config.h config.h.bak && git pull";
 NSHELL = "cd shell && nix-shell && cd ..";
 PATCH = "patch -p1 <";
-STCONF = "cd ~/.repos/nixos/config/st  && hx config.h";
-DMENUCONF = "cd ~/.repos/nixos/config/dmenu && hx config.h";
-SLOCKCONF = "cd ~/.repos/nixos/config/slock && hx config.h";
+STCONF = "cd ~/.config/st && hx config.h";
+DMENUCONF = "cd ~/.config/dmenu && hx config.h";
+DWMCONF = "cd ~/.config/dwm && hx config.h";
 CONFSAVE = "mv config.h config.h.bak";
 CONFDEL = "cp config.h.bak config.h";
 MAKE = "make clean && make && make install PREFIX=$HOME/.local";
@@ -132,6 +132,8 @@ IMGCOMPRESS="~/.local/bin/compress-images.sh";
 DTAR = "~/.local/bin/tar.sh"; ## overwite folder to folder.tar.gz
 XYZ = "~/.local/bin/xyz.sh";
 MPG = "ffmpeg -i"; ## MPG <path/to/img.png> <overwrite/img/file>
+yz = "yazi";
+YZ = "yazi";
 
 ## POWER
 REBOOT = "sudo reboot";

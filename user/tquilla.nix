@@ -27,7 +27,7 @@
 		kitty = "kitty";
 		"com.kdocker" = "com.kdocker";
 		
-#  		alacritty = "alacritty";		
+#  	alacritty = "alacritty";		
 #		"gtk-3.0" = "gtk-3.0";
 #		ghostty = "ghostty";		
 #		dmenu = "dmenu";

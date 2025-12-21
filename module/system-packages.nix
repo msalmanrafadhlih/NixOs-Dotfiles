@@ -42,11 +42,16 @@
       git
       
       # ======= LSP
-      python313Packages.python-lsp-server # or ty/ruff
-      typescript-language-server
+      python313Packages.python-lsp-server # (or ty/ruff) python
+      typescript-language-server # javascript, typescript..
       jdt-language-server # Java
-      vscode-json-languageserver
-      vscode-css-languageserver
-      superhtml
+      vscode-json-languageserver # json
+      vscode-css-languageserver # css
+      superhtml # html
+      rust-analyzer # Rust
+      marksman # .md/markdown
+      nixd # nix language
+      taplo # toml
+      yaml-language-server # yaml
     ]);
 }
