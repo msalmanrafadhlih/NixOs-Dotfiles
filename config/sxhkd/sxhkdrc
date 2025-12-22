@@ -43,16 +43,16 @@ super + e
 super + f
 	thunar
 # ------o--------------------------------------------------  Geany 
-super + g,
+super + g
 	geany
 # ---------------------------------------------------------  Helix
-super + h,
-	kdocker -f -q st -c Terminalnvim -e hx .repos/
+super + h
+	kdocker -f -q st -c Terminalnvim -e hx
 # ---------------------------------------------------------  Rmpc	
 super + m
     kdocker -f -q st -c floating_rmpc -e rmpc
 # ---------------------------------------------------------  Picart
-super + v,
+super + v
     picard
 # ---------------------------------------------------------  Terminal
 super + p
@@ -61,7 +61,7 @@ h# --------------------------------------------------------- Spotify
 super + s
 	kdocker -q -f spotify --disable-accelerated-video-decode --no-zygote
 # ---------------------------------------------------------  Exit
-super + q,
+super + q
 	bspc node -c
 # ---------------------------------------------------------  Kitty
 super + y

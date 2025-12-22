@@ -3,7 +3,7 @@
 {
   
   home.sessionVariables = {
-    EDITOR = "hx";
+    EDITOR = "code";
     BROWSER = "vivaldi";
     TERMINAL = "st";
   };
