@@ -98,6 +98,9 @@ TMUXSAVE = "tmux source-file ~/.config/tmux/tmux.conf";
 TMUXDEL = "tmux kill-server";
 MOSH = "mosh --ssh='ssh -p 8022'";
 
+# Python
+py = "python3";
+
 ##  OTHER
 BASHSAVE = "source ~/.bashrc && dunstify 'BASHRC saved'";
 ZSHSAVE = "source ~/.zshrc && dunstify 'ZSHRC saved'";
@@ -124,6 +127,7 @@ SVFONT = "fc-cache -fv";
 GETHASH = "nix store prefetch-file"; ## GETHASH <link>
 PKGLIST = "nix-store --query --requisites /run/current-system | cut -d- -f2- | sort | uniq";
 connect = "sudo tailscale up --operator=$USER";
+
 ## productivities
 CAM = "~/.local/bin/opencam";
 DMUSIC = "yt-dlp --trim-filenames 80 --restrict-filenames -x --audio-format mp3 -S 'abr,codec' -o '~/Musics/%(playlist|NA)s/%(title)s [%(id)s].%(ext)s'";

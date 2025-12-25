@@ -34,7 +34,7 @@
 #		dwm = "dwm";
 #		st = "st";
 
-		"vesktop/themes" = "vesktop/thems";
+		"vesktop/themes" = "vesktop/themes";
     };
 
     locals = import ../module/locals.nix;

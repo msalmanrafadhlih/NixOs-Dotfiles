@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.packages =
@@ -30,7 +30,7 @@
     ])
     ++ (with pkgs.unstable; [
       # unstable packages
-      helix
+      vim
       ani-cli
       yt-dlp
       timg
