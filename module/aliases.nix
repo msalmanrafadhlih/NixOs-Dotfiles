@@ -64,22 +64,22 @@ WORK = "hx ~/.config/bookmarks/work.txt";
 
 
 ##  DOTSFILE CONNFIGURATION & BSPWM
-CONFIG = "ls ~/.repos/nixos/config && cd ~/.repos/nixos/config";
-POLYMODULE = "tree ~/.repos/nixos/config/polybar/modules && cd ~/.repos/nixos/config/polybar/modules";
-POLYSCRIPT =  "cd ~/.repos/nixos/config/polybar/script && tree";
+CONFIG = "ls ~/.repos/Dotfiles/BSPWM/config && cd ~/.repos/Dotfiles/BSPWM/config";
+POLYMODULE = "tree ~/.repos/Dotfiles/BSPWM/config/polybar/modules && cd ~/.repos/Dotfiles/BSPWM/config/polybar/modules";
+POLYSCRIPT =  "cd ~/.repos/Dotfiles/BSPWM/config/polybar/script && tree";
 
-TMUX = "hx ~/.repos/nixos/config/tmux/tmux.conf";
-ER = "hx ~/.repos/nixos/config/bspwm/src/ExternalRules";
-BSPWM = "hx ~/.repos/nixos/config/bspwm/bspwmrc";
-SXHKD = "hx ~/.repos/nixos/config/sxhkd/sxhkdrc";
-POLY = "hx ~/.repos/nixos/config/polybar/config.ini";
-ALAC = "hx ~/.repos/nixos/config/alacritty/alacritty.toml";
-DUNST = "hx ~/.repos/nixos/config/dunst/dunstrc";
+TMUX = "hx ~/.repos/Dotfiles/BSPWM/config/tmux/tmux.conf";
+ER = "hx ~/.repos/Dotfiles/BSPWM/config/bspwm/src/ExternalRules";
+BSPWM = "hx ~/.repos/Dotfiles/BSPWM/config/bspwm/bspwmrc";
+SXHKD = "hx ~/.repos/Dotfiles/BSPWM/config/sxhkd/sxhkdrc";
+POLY = "hx ~/.repos/Dotfiles/BSPWM/config/polybar/config.ini";
+ALAC = "hx ~/.repos/Dotfiles/BSPWM/config/alacritty/alacritty.toml";
+DUNST = "hx ~/.repos/Dotfiles/BSPWM/config/dunst/dunstrc";
 CURSOR = "hx ~/.icons/default/index.theme";
-PCOM = "hx ~/.repos/nixos/config/picom/picom.conf";
-ANIMA = "hx ~/.repos/nixos/config/picom/picom-animations.conf";
-POWERMENU = "hx ~/.repos/nixos/config/rofi/files/powermenu/type-4/style-1.rasi";
-ROFI = "hx ~/.repos/nixos/config/rofi/files/launchers/type-7/style-4.rasi";
+PCOM = "hx ~/.repos/Dotfiles/BSPWM/config/picom/picom.conf";
+ANIMA = "hx ~/.repos/Dotfiles/BSPWM/config/picom/picom-animations.conf";
+POWERMENU = "hx ~/.repos/Dotfiles/BSPWM/config/rofi/files/powermenu/type-4/style-1.rasi";
+ROFI = "hx ~/.repos/Dotfiles/BSPWM/config/rofi/files/launchers/type-7/style-4.rasi";
 
 ## Suckless Stuff
 SUCKPULL = "mv config.h config.h.bak && git pull";
