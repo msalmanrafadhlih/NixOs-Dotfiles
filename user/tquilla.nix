@@ -4,7 +4,7 @@
     create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
     HOME = config.home.homeDirectory;
     USER = config.home.username;
-    dots = "${HOME}/.repos/nixos1/Dotfiles";
+    dots = "${HOME}/.repos/nixos/Dotfiles";
 
 #	~/.config
     configs = {
