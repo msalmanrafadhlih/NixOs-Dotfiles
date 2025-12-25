@@ -30,7 +30,7 @@
     ])
     ++ (with pkgs.unstable; [
       # unstable packages
-      vim
+      nvim
       ani-cli
       yt-dlp
       timg

@@ -13,14 +13,14 @@ TV = "nix run nixpkgs#television";
 
 ##  SYSTEM CONFIGURATIONS
 HOSTS = "cd ~/.repos/nixos/host && tree ~/.repos/nixos/host";
-NIX = "hx ~/.repos/nixos/system/configuration.nix";
+NIX = "nano ~/.repos/nixos/system/configuration.nix";
 HNIX = "bat ~/.repos/nixos/system/hardware-configuration.nix";
-FLAKE = "hx ~/.repos/nixos/flake.nix";
+FLAKE = "nano ~/.repos/nixos/flake.nix";
 LOCK = "bat ~/.repos/nixos/flake.lock";
 
-FONTS = "hx ~/.repos/nixos/module/fonts.nix";
-SYSINSTALL = "hx  ~/.repos/nixos/module/system-packages.nix";
-SERVICE = "hx  ~/.repos/nixos/module/services.nix";
+FONTS = "nano ~/.repos/nixos/module/fonts.nix";
+SYSINSTALL = "nano  ~/.repos/nixos/module/system-packages.nix";
+SERVICE = "nano  ~/.repos/nixos/module/services.nix";
 BOOT = "~/.repos/nixos/module/boot.nix";
 
 
@@ -32,35 +32,35 @@ GRAPH = "git log --oneline --decorate --graph --all";
 
 ##  USER CONFIGURATIONS {EDIT}
 MDL = "cd ~/.repos/nixos/module && ls -a";
-HOME = "cd ~/.repos/nixos/user && hx ~/.repos/nixos/user/$USER.nix ";
-ALIAS = "hx ~/.repos/nixos/module/aliases.nix";
-BASH = "hx ~/.repos/nixos/module/bash.nix";
-ZSH = " hx ~/.repos/nixos/module/zshrc.nix";
-INSTALL = "hx ~/.repos/nixos/module/packages.nix";
-BAT = "hx ~/.repos/nixos/module/bat.nix";
-XSESSION = "hx ~/.repos/nixos/module/xsession.nix";
-PAD = "hx ~/.repos/nixos/module/toggle_touchpad.nix";
-VOL = "hx ~/.repos/nixos/module/volume.nix";
-BRIGHT = "hx ~/.repos/nixos/module/brightness.nix";
-BAT0 = "hx ~/.repos/nixos/module/battery.nix";
-NANO = "hx ~/.repos/nixos/module/nanorc.nix";
-MPD = "hx ~/.repos/nixos/module/mpd.nix";
-BRANCH = "hx ~/.repos/nixos/module/git-prompt.nix";
-TAR = "hx ~/.repos/nixos/module/tar.nix";
-BG = "hx ~/.repos/nixos/module/background.nix";
-OPENCAM = "hx ~/.repos/nixos/module/opencam.nix";
-BOOKMARK = "hx ~/.repos/nixos/module/bookmarks.nix";
-REPOS = "hx ~/.repos/nixos/module/github-repos.nix";
-TMUXSESSION = "hx ~/.repos/nixos/module/tmux-sessions.nix";
-LOCAL = "hx ~/.repos/nixos/module/locals.nix";
-SSH = "hx ~/.repos/nixos/module/ssh.nix";
+HOME = "cd ~/.repos/nixos/user && nano ~/.repos/nixos/user/$USER.nix ";
+ALIAS = "nano ~/.repos/nixos/module/aliases.nix";
+BASH = "nano ~/.repos/nixos/module/bash.nix";
+ZSH = " nano ~/.repos/nixos/module/zshrc.nix";
+INSTALL = "nano ~/.repos/nixos/module/packages.nix";
+BAT = "nano ~/.repos/nixos/module/bat.nix";
+XSESSION = "nano ~/.repos/nixos/module/xsession.nix";
+PAD = "nano ~/.repos/nixos/module/toggle_touchpad.nix";
+VOL = "nano ~/.repos/nixos/module/volume.nix";
+BRIGHT = "nano ~/.repos/nixos/module/brightness.nix";
+BAT0 = "nano ~/.repos/nixos/module/battery.nix";
+NANO = "nano ~/.repos/nixos/module/nanorc.nix";
+MPD = "nano ~/.repos/nixos/module/mpd.nix";
+BRANCH = "nano ~/.repos/nixos/module/git-prompt.nix";
+TAR = "nano ~/.repos/nixos/module/tar.nix";
+BG = "nano ~/.repos/nixos/module/background.nix";
+OPENCAM = "nano ~/.repos/nixos/module/opencam.nix";
+BOOKMARK = "nano ~/.repos/nixos/module/bookmarks.nix";
+REPOS = "nano ~/.repos/nixos/module/github-repos.nix";
+TMUXSESSION = "nano ~/.repos/nixos/module/tmux-sessions.nix";
+LOCAL = "nano ~/.repos/nixos/module/locals.nix";
+SSH = "nano ~/.repos/nixos/module/ssh.nix";
 
 ##  USER CONFIGURATIONS {SAVE}
 UTILS = "chmod +x ~/.local/bin/*.sh";
 
 ## LINK BOOKMARKS
-PERSONAL = "hx ~/.config/bookmarks/personal.txt";
-WORK = "hx ~/.config/bookmarks/work.txt";
+PERSONAL = "nano ~/.config/bookmarks/personal.txt";
+WORK = "nano ~/.config/bookmarks/work.txt";
 
 
 ##  DOTSFILE CONNFIGURATION & BSPWM
@@ -68,30 +68,30 @@ CONFIG = "ls ~/.repos/Dotfiles/BSPWM/config && cd ~/.repos/Dotfiles/BSPWM/config
 POLYMODULE = "tree ~/.repos/Dotfiles/BSPWM/config/polybar/modules && cd ~/.repos/Dotfiles/BSPWM/config/polybar/modules";
 POLYSCRIPT =  "cd ~/.repos/Dotfiles/BSPWM/config/polybar/script && tree";
 
-TMUX = "hx ~/.repos/Dotfiles/BSPWM/config/tmux/tmux.conf";
-ER = "hx ~/.repos/Dotfiles/BSPWM/config/bspwm/src/ExternalRules";
-BSPWM = "hx ~/.repos/Dotfiles/BSPWM/config/bspwm/bspwmrc";
-SXHKD = "hx ~/.repos/Dotfiles/BSPWM/config/sxhkd/sxhkdrc";
-POLY = "hx ~/.repos/Dotfiles/BSPWM/config/polybar/config.ini";
-ALAC = "hx ~/.repos/Dotfiles/BSPWM/config/alacritty/alacritty.toml";
-DUNST = "hx ~/.repos/Dotfiles/BSPWM/config/dunst/dunstrc";
-CURSOR = "hx ~/.icons/default/index.theme";
-PCOM = "hx ~/.repos/Dotfiles/BSPWM/config/picom/picom.conf";
-ANIMA = "hx ~/.repos/Dotfiles/BSPWM/config/picom/picom-animations.conf";
-POWERMENU = "hx ~/.repos/Dotfiles/BSPWM/config/rofi/files/powermenu/type-4/style-1.rasi";
-ROFI = "hx ~/.repos/Dotfiles/BSPWM/config/rofi/files/launchers/type-7/style-4.rasi";
+TMUX = "nano ~/.repos/Dotfiles/BSPWM/config/tmux/tmux.conf";
+ER = "nano ~/.repos/Dotfiles/BSPWM/config/bspwm/src/ExternalRules";
+BSPWM = "nano ~/.repos/Dotfiles/BSPWM/config/bspwm/bspwmrc";
+SXHKD = "nano ~/.repos/Dotfiles/BSPWM/config/sxhkd/sxhkdrc";
+POLY = "nano ~/.repos/Dotfiles/BSPWM/config/polybar/config.ini";
+ALAC = "nano ~/.repos/Dotfiles/BSPWM/config/alacritty/alacritty.toml";
+DUNST = "nano ~/.repos/Dotfiles/BSPWM/config/dunst/dunstrc";
+CURSOR = "nano ~/.icons/default/index.theme";
+PCOM = "nano ~/.repos/Dotfiles/BSPWM/config/picom/picom.conf";
+ANIMA = "nano ~/.repos/Dotfiles/BSPWM/config/picom/picom-animations.conf";
+POWERMENU = "nano ~/.repos/Dotfiles/BSPWM/config/rofi/files/powermenu/type-4/style-1.rasi";
+ROFI = "nano ~/.repos/Dotfiles/BSPWM/config/rofi/files/launchers/type-7/style-4.rasi";
 
 ## Suckless Stuff
 SUCKPULL = "mv config.h config.h.bak && git pull";
 NSHELL = "cd shell && nix-shell && cd ..";
 PATCH = "patch -p1 <";
-STCONF = "cd ~/.config/st && hx config.h";
-DMENUCONF = "cd ~/.config/dmenu && hx config.h";
-DWMCONF = "cd ~/.config/dwm && hx config.h";
+STCONF = "cd ~/.config/st && nano config.h";
+DMENUCONF = "cd ~/.config/dmenu && nano config.h";
+DWMCONF = "cd ~/.config/dwm && nano config.h";
 CONFSAVE = "mv config.h config.h.bak";
 CONFDEL = "cp config.h.bak config.h";
 MAKE = "make clean && make && make install PREFIX=$HOME/.local";
-SUCKLESS = "hx ~/.repos/nixos/module/suckless.nix";
+SUCKLESS = "nano ~/.repos/nixos/module/suckless.nix";
 
 ## Tmux
 TMUXSAVE = "tmux source-file ~/.config/tmux/tmux.conf";
