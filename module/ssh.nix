@@ -5,9 +5,9 @@
 	services.tailscale.enable = true;
 	services.openssh = {
 		startWhenNeeded = true;
-		settings.PasswordAuthentication = true;
+		settings.PasswordAuthentication = false;
 		settings.PermitRootLogin = "no";
-		settings.KbdInteractiveAuthentication = true;
+		settings.KbdInteractiveAuthentication = false;
 	};
 	## using mosh
 	programs.mosh.enable = true;
