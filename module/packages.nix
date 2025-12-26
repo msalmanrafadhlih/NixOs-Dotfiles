@@ -27,7 +27,7 @@ home.packages =
     flameshot
     glow # preview readme.md
 
-    inputs.angeldust-nixCats.packages.${pkgs.system}.default
+    inputs.angeldust-nixCats.packages.${pkgs.stdenv.hostPlatform.system}.default
   ])
   ++ (with pkgs.unstable; [
     # unstable packages
