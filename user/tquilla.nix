@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, ... }:
+{ config, inputs, ... }:
 
   let
     create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
@@ -91,6 +91,5 @@
 	 ## comment "#" this if you don't want to use spotify with custom theme (spicetify)
   	 ../module/spotify.nix
 	inputs.spicetify-nix.homeManagerModules.default
-	inputs.angeldust-nixCats.packages.${pkgs.stdenv.hostPlatform.system}.default
    ];
 }
