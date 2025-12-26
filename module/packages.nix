@@ -25,9 +25,8 @@ home.packages =
     evince
     obs-studio
     flameshot
-    glow # preview readme.md
-
-    inputs.angeldust-nixCats.packages.${pkgs.stdenv.hostPlatform.system}.default
+    
+	inputs.neovim.packages.${pkgs.stdenv.hostPlatform.system}.default
   ])
   ++ (with pkgs.unstable; [
     # unstable packages

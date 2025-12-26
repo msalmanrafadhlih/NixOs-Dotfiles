@@ -28,18 +28,16 @@
     nixpkgs.url = "nixpkgs/nixos-25.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-    angeldust-nixCats.url = "github:meflove/angeldust-nixCats";
     textfox.url = "github:adriankarlen/textfox";
     nur.url = "github:nix-community/NUR";
+    inputs.neovim = {
+      url = "github:dileep-kishore/nyanvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };    
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-#    nixvim = {
-#      url = "github:nix-community/nixvim";
-#      inputs.nixpkgs.follows = "nixpkgs";
-#      inputs.flakes-parts.follows = "flake-parts";
-#    };
   };
 
   ###########################
