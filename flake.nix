@@ -31,7 +31,7 @@
     textfox.url = "github:adriankarlen/textfox";
     nur.url = "github:nix-community/NUR";
     nixCats = {
-      url = "github:msalmanrafadhilh/nixCats";
+      url = "github:msalmanrafadhlih/nixCats";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
