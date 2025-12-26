@@ -9,15 +9,15 @@
     extra-substituters = [
       "https://cache.nixos.org"
       "https://nix-community.cachix.org"
-#      "https://nixpkgs-wayland.cachix.org"
+      #      "https://nixpkgs-wayland.cachix.org"
       "https://spicetify-nix.cachix.org"
     ];
 
     extra-trusted-public-keys = [
-	  "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-	  "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-#	  "nixpkgs-wayland.cachix.org-1:3lwxaILxMRkVhehr5StQprHdEo4IrE8sRho9R9HOLYA="
-	  "spicetify-nix.cachix.org-1:jjnwULkvMdu0E5KGBbtgrISEfDdJTGSZ4ATkiFzZn5I="
+      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+      #	  "nixpkgs-wayland.cachix.org-1:3lwxaILxMRkVhehr5StQprHdEo4IrE8sRho9R9HOLYA="
+      "spicetify-nix.cachix.org-1:jjnwULkvMdu0E5KGBbtgrISEfDdJTGSZ4ATkiFzZn5I="
     ];
   };
 
@@ -31,9 +31,9 @@
     textfox.url = "github:adriankarlen/textfox";
     nur.url = "github:nix-community/NUR";
     nixCats = {
-      url = "github:dileep-kishore/nyanvim";
+      url = "github:msalmanrafadhilh/nixCats";
       inputs.nixpkgs.follows = "nixpkgs";
-    };    
+    };
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -43,10 +43,19 @@
   ###########################
   ##  ⚙️ Flake Outputs
   ###########################
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, nur, ... } @ inputs:
-  let
+  outputs = {
+    self,
+    nixpkgs,
+    nixpkgs-unstable,
+    home-manager,
+    nur,
+    ...
+  } @ inputs: let
     system = "x86_64-linux";
-    pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
+    pkgs = import nixpkgs {
+      inherit system;
+      config.allowUnfree = true;
+    };
 
     overlay-unstable = final: prev: {
       unstable = import nixpkgs-unstable {
@@ -56,11 +65,11 @@
     };
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = { 
-      	inherit inputs; 
+      specialArgs = {
+        inherit inputs;
         pkgs-unstable = import nixpkgs-unstable {
           system = "x86_64-linux";
-          config = { allowUnfree = true; };
+          config = {allowUnfree = true;};
         };
       };
       system = "x86_64-linux";
@@ -68,7 +77,8 @@
         ###################################
         ## 🏠 Home Manager Integration
         ###################################
-        home-manager.nixosModules.home-manager {
+        home-manager.nixosModules.home-manager
+        {
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
@@ -76,7 +86,7 @@
               tquilla = import ./user/tquilla.nix;
               # whiskey = import ./user/whiskey.nix;
             };
-            extraSpecialArgs = { inherit inputs; };
+            extraSpecialArgs = {inherit inputs;};
             backupFileExtension = "backup";
           };
         }
@@ -84,7 +94,7 @@
         ###################################
         ## 🧩 Overlays & External Modules
         ###################################
-        { nixpkgs.overlays = [ overlay-unstable ]; }
+        {nixpkgs.overlays = [overlay-unstable];}
         nur.modules.nixos.default
 
         ###################################
@@ -117,19 +127,19 @@
         ###################################
         {
           nix.settings = {
-			extra-experimental-features = [ "nix-command" "flakes" ];
+            extra-experimental-features = ["nix-command" "flakes"];
             # pastikan sama seperti di nixConfig
             extra-substituters = [
               "https://cache.nixos.org"
               "https://nix-community.cachix.org"
-#              "https://nixpkgs-wayland.cachix.org"
+              #              "https://nixpkgs-wayland.cachix.org"
               "https://spicetify-nix.cachix.org"
             ];
 
             extra-trusted-public-keys = [
               "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
               "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-#              "nixpkgs-wayland.cachix.org-1:3lwxaILxMRkVhehr5StQprHdEo4IrE8sRho9R9HOLYA="
+              #              "nixpkgs-wayland.cachix.org-1:3lwxaILxMRkVhehr5StQprHdEo4IrE8sRho9R9HOLYA="
               "spicetify-nix.cachix.org-1:jjnwULkvMdu0E5KGBbtgrISEfDdJTGSZ4ATkiFzZn5I="
             ];
 
