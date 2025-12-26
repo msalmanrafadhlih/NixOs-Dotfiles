@@ -24,7 +24,7 @@ SERVICE = "nvim  ~/.repos/nixos/module/services.nix";
 BOOT = "~/.repos/nixos/module/boot.nix";
 
 
-## GIT INTEGRATION
+## GIT INTEG?RATION
 GIT = "git add . && git commit -m";
 CLASS = "xprop | grep CLASS";
 NAME = "xprop | grep NAME";
@@ -43,7 +43,7 @@ PAD = "nvim ~/.repos/nixos/module/toggle_touchpad.nix";
 VOL = "nvim ~/.repos/nixos/module/volume.nix";
 BRIGHT = "nvim ~/.repos/nixos/module/brightness.nix";
 BAT0 = "nvim ~/.repos/nixos/module/battery.nix";
-nvim = "nvim ~/.repos/nixos/module/nvimrc.nix";
+NANO = "nvim ~/.repos/nixos/module/nanorc.nix";
 MPD = "nvim ~/.repos/nixos/module/mpd.nix";
 BRANCH = "nvim ~/.repos/nixos/module/git-prompt.nix";
 TAR = "nvim ~/.repos/nixos/module/tar.nix";
