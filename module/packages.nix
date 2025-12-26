@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
 home.packages =
@@ -41,6 +41,5 @@ home.packages =
     kitty
     geany
   ]);
-
 }
 
