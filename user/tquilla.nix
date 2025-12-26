@@ -9,7 +9,7 @@
 #	~/.config
     configs = {
 		bspwm = "bspwm";
-  	polybar = "polybar";
+	  	polybar = "polybar";
 		sxhkd = "sxhkd";
 		nano = "nano";
 		rofi = "rofi";
@@ -91,5 +91,6 @@
 	 ## comment "#" this if you don't want to use spotify with custom theme (spicetify)
   	 ../module/spotify.nix
 	inputs.spicetify-nix.homeManagerModules.default
+	inputs.angeldust-nixCats.packages.${pkgs.stdenv.hostPlatform.system}.default
    ];
 }

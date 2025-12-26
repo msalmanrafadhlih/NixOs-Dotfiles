@@ -11,8 +11,8 @@
       tmux
 
       nixpkgs-fmt
-#      daktilo
-	    vscode
+#     daktilo
+	  vscode
       nodejs_24
       feh
       gcc
@@ -20,17 +20,16 @@
       font-manager
       picard      
       jellyfin-ffmpeg
-	    ungoogled-chromium
+	  ungoogled-chromium
   	  libreoffice	  
-	    zoom
-	    evince
-	    obs-studio
-	    flameshot
-	    glow # preview readme.md
+	  zoom
+	  evince
+	  obs-studio
+	  flameshot
+	  glow # preview readme.md
     ])
     ++ (with pkgs.unstable; [
       # unstable packages
-      nvim
       ani-cli
       yt-dlp
       timg

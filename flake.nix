@@ -28,6 +28,7 @@
     nixpkgs.url = "nixpkgs/nixos-25.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    angeldust-nixCats.url = "github:meflove/angeldust-nixCats";
     textfox.url = "github:adriankarlen/textfox";
     nur.url = "github:nix-community/NUR";
     home-manager = {
