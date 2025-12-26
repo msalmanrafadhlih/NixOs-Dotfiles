@@ -26,7 +26,7 @@ home.packages =
     obs-studio
     flameshot
     
-	inputs.neovim.packages.${pkgs.stdenv.hostPlatform.system}.default
+	inputs.nixCats.packages.${pkgs.stdenv.hostPlatform.system}.default
   ])
   ++ (with pkgs.unstable; [
     # unstable packages

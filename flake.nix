@@ -30,7 +30,7 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     textfox.url = "github:adriankarlen/textfox";
     nur.url = "github:nix-community/NUR";
-    inputs.neovim = {
+    nixCats = {
       url = "github:dileep-kishore/nyanvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };    
