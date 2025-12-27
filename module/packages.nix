@@ -32,7 +32,6 @@
     ])
     ++ (with pkgs.unstable; [
       # unstable packages
-      neovim
       ani-cli
       yt-dlp
       timg

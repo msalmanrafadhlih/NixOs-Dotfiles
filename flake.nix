@@ -29,7 +29,7 @@
     textfox.url = "github:adriankarlen/textfox";
     nur.url = "github:nix-community/NUR";
     nixcats = {
-    	github:BirdeeHub/nixCats-nvim#kickstart-nvim
+    	url = "github:msalmanrafadhlih/nixCats-nvim/kickstart-nvim";
       	inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
