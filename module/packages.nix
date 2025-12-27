@@ -28,10 +28,11 @@
       obs-studio
       flameshot
 
-      #	inputs.nixCats.packages.${pkgs.stdenv.hostPlatform.system}.default
+#     inputs.nixCats.packages.${pkgs.stdenv.hostPlatform.system}.default
     ])
     ++ (with pkgs.unstable; [
       # unstable packages
+      neovim
       ani-cli
       yt-dlp
       timg

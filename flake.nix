@@ -28,10 +28,6 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     textfox.url = "github:adriankarlen/textfox";
     nur.url = "github:nix-community/NUR";
-    nixCats = {
-      url = "github:msalmanrafadhlih/nixCats";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
