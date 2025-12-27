@@ -127,14 +127,14 @@
       "locked": {
         "lastModified": 1760644521,
         "narHash": "sha256-iVgAKQk9ZRMzeDrjVHvt2hHWQxIGo42XHLwHYxvrsBs=",
-        "owner": "dileep-kishore",
-        "repo": "nyanvim",
+        "owner": "msalmanrafadhlih",
+        "repo": "nixCats",
         "rev": "9c3cfddf693f8610552addcec0ab79c25055b9e3",
         "type": "github"
       },
       "original": {
-        "owner": "dileep-kishore",
-        "repo": "nyanvim",
+        "owner": "msalmanrafadhlih",
+        "repo": "nixCats",
         "type": "github"
       }
     },
