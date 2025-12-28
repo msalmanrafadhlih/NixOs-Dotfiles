@@ -67,11 +67,11 @@
     },
     "nixCats": {
       "locked": {
-        "lastModified": 1765766809,
-        "narHash": "sha256-3Xp41+Sb1zIzASa1Uu1k1RMUoJ9CGyYb0GtvvpRPBqg=",
+        "lastModified": 1765766599,
+        "narHash": "sha256-0iM0tIsxBhsvSZaJNSIPUne4evRcrNIdUk5ywu371x0=",
         "owner": "BirdeeHub",
         "repo": "nixCats-nvim",
-        "rev": "fe157e3ed69ed14b55ca81f597eac282caed58a2",
+        "rev": "d0cb5f9f666289a82a61c77509378543eda2c9fb",
         "type": "github"
       },
       "original": {
@@ -88,16 +88,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1766878887,
-        "narHash": "sha256-AFNsIEp9QYTXelofxjRem1MJZK6jvUQATFkAVce+Dd4=",
+        "lastModified": 1766879983,
+        "narHash": "sha256-rdr6wnvJgcRF4crZGT2xaU6ZUATR+urQfAmaa+SmCQQ=",
         "owner": "msalmanrafadhlih",
         "repo": "nixCats-nvim",
-        "rev": "2ca45d6c9f09b19642ecc2328c347cd64b69ce9d",
+        "rev": "3509a8ecaa88a272770a7be77ffc64a50965c677",
         "type": "github"
       },
       "original": {
         "owner": "msalmanrafadhlih",
-        "ref": "kickstart-nvim",
+        "ref": "lazynvim",
         "repo": "nixCats-nvim",
         "type": "github"
       }
