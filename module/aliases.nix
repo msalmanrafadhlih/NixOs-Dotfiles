@@ -61,22 +61,22 @@
   WORK = "nano ~/.config/bookmarks/work.txt";
 
   ##  DOTSFILE CONNFIGURATION & BSPWM
-  CONFIG = "ls ~/.repos/Dotfiles/BSPWM/config && cd ~/.repos/Dotfiles/BSPWM/config";
-  POLYMODULE = "tree ~/.repos/Dotfiles/BSPWM/config/polybar/modules && cd ~/.repos/Dotfiles/BSPWM/config/polybar/modules";
-  POLYSCRIPT = "cd ~/.repos/Dotfiles/BSPWM/config/polybar/script && tree";
+  CONFIG = "ls ~/.repos/dots/BSPWM/config && cd ~/.repos/dots/BSPWM/config";
+  POLYMODULE = "tree ~/.repos/dots/BSPWM/config/polybar/modules && cd ~/.repos/dots/BSPWM/config/polybar/modules";
+  POLYSCRIPT = "cd ~/.repos/dots/BSPWM/config/polybar/script && tree";
 
-  TMUX = "nano ~/.repos/Dotfiles/BSPWM/config/tmux/tmux.conf";
-  ER = "nano ~/.repos/Dotfiles/BSPWM/config/bspwm/src/ExternalRules";
-  BSPWM = "nano ~/.repos/Dotfiles/BSPWM/config/bspwm/bspwmrc";
-  SXHKD = "nano ~/.repos/Dotfiles/BSPWM/config/sxhkd/sxhkdrc";
-  POLY = "nano ~/.repos/Dotfiles/BSPWM/config/polybar/config.ini";
-  ALAC = "nano ~/.repos/Dotfiles/BSPWM/config/alacritty/alacritty.toml";
-  DUNST = "nano ~/.repos/Dotfiles/BSPWM/config/dunst/dunstrc";
+  TMUX = "nano ~/.repos/dots/BSPWM/config/tmux/tmux.conf";
+  ER = "nano ~/.repos/dots/BSPWM/config/bspwm/src/ExternalRules";
+  BSPWM = "nano ~/.repos/dots/BSPWM/config/bspwm/bspwmrc";
+  SXHKD = "nano ~/.repos/dots/BSPWM/config/sxhkd/sxhkdrc";
+  POLY = "nano ~/.repos/dots/BSPWM/config/polybar/config.ini";
+  ALAC = "nano ~/.repos/dots/BSPWM/config/alacritty/alacritty.toml";
+  DUNST = "nano ~/.repos/dots/BSPWM/config/dunst/dunstrc";
   CURSOR = "nano ~/.icons/default/index.theme";
-  PCOM = "nano ~/.repos/Dotfiles/BSPWM/config/picom/picom.conf";
-  ANIMA = "nano ~/.repos/Dotfiles/BSPWM/config/picom/picom-animations.conf";
-  POWERMENU = "nano ~/.repos/Dotfiles/BSPWM/config/rofi/files/powermenu/type-4/style-1.rasi";
-  ROFI = "nano ~/.repos/Dotfiles/BSPWM/config/rofi/files/launchers/type-7/style-4.rasi";
+  PCOM = "nano ~/.repos/dots/BSPWM/config/picom/picom.conf";
+  ANIMA = "nano ~/.repos/dots/BSPWM/config/picom/picom-animations.conf";
+  POWERMENU = "nano ~/.repos/dots/BSPWM/config/rofi/files/powermenu/type-4/style-1.rasi";
+  ROFI = "nano ~/.repos/dots/BSPWM/config/rofi/files/launchers/type-7/style-4.rasi";
 
   ## Suckless Stuff
   SUCKPULL = "mv config.h config.h.bak && git pull";
